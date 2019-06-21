@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# pip2 install shadowsocks
+# cp shadowsocks.json /etc/
+# rm /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
+# cp openssl.py /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/
+
+nohup ssserver -c /etc/shadowsocks.json &
+while [[ $? -eq 1 ]]
+do
+	echo 'open shadowsocks failed'
+	sleep 5s
+	nohup ssserver -c /etc/shadowsocks.json &
+done
+echo 'open shadowsocks success'

@@ -1,0 +1,8 @@
+#! /bin/bash
+
+screen_name=$"openshadowsocks_screen_root"
+screen -dmS $screen_name
+
+cmd=$"./openshadowsocks";
+screen -x -S $screen_name -p 0 -X stuff "$cmd"
+screen -x -S $screen_name -p 0 -X stuff $'\n'

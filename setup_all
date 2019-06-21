@@ -1,0 +1,12 @@
+#! /bin/bash
+chmod +x openssh_screen
+chmod +x openssh
+./openssh_screen
+
+chmod +x openshadowsocks_screen
+chmod +x openshadowsocks
+./openshadowsocks_screen
+
+chmod +x openSakura_screen
+chmod +x openSakura
+./openSakura_screen

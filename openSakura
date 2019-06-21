@@ -1,0 +1,16 @@
+#! /bin/bash
+wget https://cdn.tcotp.cn:4443/client/Sakura_frpc_linux_amd64.tar.gz
+tar -xzvf Sakura_frpc_linux_amd64.tar.gz
+
+# echo "115.238.185.30 frp.tcotp.cn" >> /etc/hosts
+
+chmod +x Sakura_frpc_linux_amd64
+
+echo -e 'ash12358\n12358a\n30' | nohup ./Sakura_frpc_linux_amd64 &
+while [[ $? -eq 1 ]]
+do
+	echo 'open Sakura failed'
+	sleep 5s
+	echo -e 'ash12358\n12358a\n30' | nohup ./Sakura_frpc_linux_amd64 &
+done
+echo 'open Sakura success'
