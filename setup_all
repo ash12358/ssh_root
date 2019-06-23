@@ -36,5 +36,5 @@ jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeou
 sleep 1000
 jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
 
-sleep(1000)
+sleep 1000
 jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
