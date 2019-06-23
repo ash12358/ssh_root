@@ -10,3 +10,31 @@ chmod +x openshadowsocks
 chmod +x openSakura_screen
 chmod +x openSakura
 ./openSakura_screen
+
+#apt install cron
+#/etc/init.d/cron status
+#/etc/init.d/cron restart
+
+sleep(30)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
+
+sleep(1000)
+jupyter nbconvert --execute --to notebook tmp.ipynb --ExecutePreprocessor.timeout=900
